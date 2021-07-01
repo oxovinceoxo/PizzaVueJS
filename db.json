@@ -50,24 +50,26 @@
       "id": 1,
       "nom": "prato",
       "image": "/img/prato.png",
-      "ingredient1": "sauce tomate",
-      "ingredient2": "creme fraiche"
+      "ingredient1": ["sauce tomate"]
     },
     {
       "id": 2,
       "nom": "raine",
-      "image": "/img/raine.png"
+      "image": "/img/raine.png",
+      "ingredient1": ["creme fraiche"]
       
     },
     {
       "id": 3,
       "nom": "norvegienne",
-      "image": "/img/norvégienne.png"
+      "image": "/img/norvégienne.png",
+      "ingredient1": ["oignon"]
     },
     {
       "id": 4,
       "nom": "marguarita",
-      "image": "/img/marguarita.png"
+      "image": "/img/marguarita.png",
+      "ingredient1": ["viande hachée"]
     }
   ]
 }

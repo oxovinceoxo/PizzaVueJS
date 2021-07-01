@@ -15,10 +15,10 @@
 <!--------------------------------------liste des produits ajoutés------------------------------------------------------>
 <div id="app3" class="container">
  
-    <h1 class="text-center bg-primary text-white">liste de vos produits</h1>
+    <h1 class="text-center bg-primary text-white" v-if="listes.length >0">liste de vos produits</h1>
         <ul>
             <div class="row">    
-                <div class="card col-md-3 col-sm-12 mt-2"  v-for="liste in listes">
+                <div class="card col-md-3 col-sm-12 mt-2"  v-for="liste in listes" >
                     <img class="card-img-top"  :src="liste.image" alt="image du produit">  
                         <div class="card-body" >
                             <h5 class="card-title text-center">{{ liste.nom }}</h5>              
@@ -39,6 +39,7 @@
 
                     <!--appel de la la fonction ajouter + variable produit de la boucle v-for-->
                     <button v-on:click="ajouter(produit)">
+
                         <img class="card-img-top" :src="produit.image" alt="image du produit">  
                             <div class="card-body"  >
                                 <h5 class="card-title text-center">{{ produit.nom }}</h5> 
@@ -50,9 +51,10 @@
 <!----------------------------------------------PIZZA------------------------------------------------------------->        
 
 <div id="app2">
-        <h1 class="text-center bg-danger text-white ">Pizza trouvée</h1>
+    
+        <h1 class="text-center bg-danger text-white "  >Pizza trouvée</h1>
         <div class="row" >    
-                <div class="card col-md-3 col-sm-12 mt-2"  v-for="pizza in pizzas"  >
+                <div class="card col-md-3 col-sm-12 mt-2" v-on:change="getpizza" v-for="pizza in pizzas" v-if="pizza.ingredient1 === listes.nom" >
                   
                         <img class="card-img-top" :src="pizza.image" alt="image du produit">  
                             <div class="card-body"  >
@@ -60,6 +62,7 @@
                             </div>    
                 </div>     
         </div>
+  
 </div>
 
 

@@ -10,7 +10,7 @@ let api3 = new Vue({
     },
     mounted() {
         axios.get('http://localhost:3333/listes')
-            .then(response => this.pizzas = response.data)
+            .then(response => this.listes = response.data)
             .catch(error => console.error("Erreur de  jsonserver"));
     },
 
@@ -21,8 +21,8 @@ let api = new Vue({
     el:"#app",
     data: function (){
         return{
-            ingredient: [],
-            listes:[]
+            ingredient: []
+   
         }
     },
     mounted() {
@@ -32,7 +32,8 @@ let api = new Vue({
     },
     methods:{
         ajouter: function(produit){
-            this.ingredient.push(listes); 
+            /* console.log(api3)*/
+          api3.listes.push(produit);
         }
     },
 }) 
@@ -42,13 +43,16 @@ let api2 = new Vue({
     el:"#app2",
     data: function (){
         return{         
-            pizzas: []
+            pizzas: [],
+            
+            
         }
     },
     mounted() {
         axios.get('http://localhost:3333/pizzas')
             .then(response => this.pizzas = response.data)
             .catch(error => console.error("Erreur de  jsonserver"));
-    },
+    }
+    
 })
 
