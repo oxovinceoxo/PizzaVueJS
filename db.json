@@ -1,0 +1,77 @@
+{
+  "produit": [
+    {
+      "id": 1,
+      "nom": "creme fraiche",
+      "image": "/img/creme.png"
+    },
+    {
+      "id": 2,
+      "nom": "sauce tomate",
+      "image": "img/tomate.png"
+    },
+    {
+      "id": 3,
+      "nom": "oignon",
+      "image": "/img/oignon.png"
+    },
+    {
+      "id": 4,
+      "nom": "champignon",
+      "image": "https://thumbs.dreamstime.com/b/les-champignons-ont-coup%C3%A9-en-tranches-39475491.jpg"
+    },
+    {
+      "id": 5,
+      "nom": "viande hachée",
+      "image": "https://st2.depositphotos.com/7210926/11489/v/950/depositphotos_114895924-stock-illustration-vector-illustration-of-mince-meat.jpg"
+    },
+    {
+      "id": 6,
+      "nom": "poivron",
+      "image": "http://cdn5.coloritou.com/dessins/peindre/201652/poivron-rouge-aliments-legumes-89981.jpg"
+    },
+    {
+      "id": 7,
+      "nom": "mozzarella",
+      "image": "/img/mozzarella.png"
+    },
+    {
+      "id": 8,
+      "nom": "saumon",
+      "image": "/img/saumon.png"
+    }
+  ],
+
+"listes":[],
+
+
+  "pizzas": [
+    {
+      "id": 1,
+      "nom": "prato",
+      "image": "/img/prato.png",
+      "ingredient1": "sauce tomate",
+      "ingredient2": "creme fraiche"
+    },
+    {
+      "id": 2,
+      "nom": "raine",
+      "image": "/img/raine.png"
+      
+    },
+    {
+      "id": 3,
+      "nom": "norvegienne",
+      "image": "/img/norvégienne.png"
+    },
+    {
+      "id": 4,
+      "nom": "marguarita",
+      "image": "/img/marguarita.png"
+    }
+  ]
+}
+
+
+
+

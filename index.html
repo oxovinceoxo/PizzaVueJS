@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Pizza</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+
+
+<!--------------------------------------liste des produits ajoutés------------------------------------------------------>
+<div id="app3" class="container">
+ 
+    <h1 class="text-center bg-primary text-white">liste de vos produits</h1>
+        <ul>
+            <div class="row">    
+                <div class="card col-md-3 col-sm-12 mt-2"  v-for="liste in listes">
+                    <img class="card-img-top"  :src="liste.image" alt="image du produit">  
+                        <div class="card-body" >
+                            <h5 class="card-title text-center">{{ liste.nom }}</h5>              
+                        </div>    
+                </div>         
+            </div>
+            <button type="button" class="btn btn-primary " v-if="listes.length >0">valider</button>
+        </ul> 
+</div>
+
+<!----------------------------------------------ingredient------------------------------------------------------------->
+
+<div id="app" class="container">
+
+    <h1 class="text-center bg-success text-white">ingredient</h1>
+        <div class="row" >    
+                <div class="card col-md-3 col-sm-12 mt-2"  v-for="produit in ingredient" >
+
+                    <!--appel de la la fonction ajouter + variable produit de la boucle v-for-->
+                    <button v-on:click="ajouter(produit)">
+                        <img class="card-img-top" :src="produit.image" alt="image du produit">  
+                            <div class="card-body"  >
+                                <h5 class="card-title text-center">{{ produit.nom }}</h5> 
+                            </div>  
+                    </button>                  
+                </div>                       
+        </div>  
+</div>
+<!----------------------------------------------PIZZA------------------------------------------------------------->        
+
+<div id="app2">
+        <h1 class="text-center bg-danger text-white ">Pizza trouvée</h1>
+        <div class="row" >    
+                <div class="card col-md-3 col-sm-12 mt-2"  v-for="pizza in pizzas"  >
+                  
+                        <img class="card-img-top" :src="pizza.image" alt="image du produit">  
+                            <div class="card-body"  >
+                                <h5 class="card-title text-center">{{ pizza.nom }}</h5>      
+                            </div>    
+                </div>     
+        </div>
+</div>
+
+
+
+
+    <script src="app.js"></script>    
+</body>
+</html>
