@@ -52,14 +52,17 @@
 
 <div id="app2">
     
-        <h1 class="text-center bg-danger text-white "  >Pizza trouvée</h1>
-        <div class="row" >    
-                <div class="card col-md-3 col-sm-12 mt-2" v-on:change="getpizza" v-for="pizza in pizzas" v-if="pizza.ingredient1 === listes.nom" >
-                  
-                        <img class="card-img-top" :src="pizza.image" alt="image du produit">  
-                            <div class="card-body"  >
-                                <h5 class="card-title text-center">{{ pizza.nom }}</h5>      
-                            </div>    
+        <h1 class="text-center bg-danger text-white " >Pizza trouvée</h1>
+        
+        <div class="row"  >    
+                <div class="card col-md-3 col-sm-12 mt-2" v-for="pizza in pizzas" v-bind:key=pizzas.id>
+                
+                        <div v-bind:test="pizza.ingredient1"  v-if="test === pizza.ingredient1 ">
+                            <img class="card-img-top" :src="pizza.image" alt="image du produit">  
+                                <div class="card-body" >
+                                    <h5 class="card-title text-center">{{ pizza.nom }}</h5>      
+                                </div> 
+                        </div>           
                 </div>     
         </div>
   

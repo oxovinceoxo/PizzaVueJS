@@ -1,0 +1,5 @@
+demarrer json server
+
+json-server --watch db.json
+
+puis ouvrir le fichier html en local

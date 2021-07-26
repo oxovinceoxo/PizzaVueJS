@@ -3,7 +3,7 @@
     {
       "id": 1,
       "nom": "creme fraiche",
-      "image": "/img/creme.png"
+      "image": "img/creme.png"
     },
     {
       "id": 2,
@@ -13,7 +13,7 @@
     {
       "id": 3,
       "nom": "oignon",
-      "image": "/img/oignon.png"
+      "image": "img/oignon.png"
     },
     {
       "id": 4,
@@ -33,12 +33,12 @@
     {
       "id": 7,
       "nom": "mozzarella",
-      "image": "/img/mozzarella.png"
+      "image": "img/mozzarella.png"
     },
     {
       "id": 8,
       "nom": "saumon",
-      "image": "/img/saumon.png"
+      "image": "img/saumon.png"
     }
   ],
 
@@ -49,27 +49,27 @@
     {
       "id": 1,
       "nom": "prato",
-      "image": "/img/prato.png",
-      "ingredient1": ["sauce tomate"]
+      "image": "img/prato.png",
+      "ingredient1": "sauce tomate"
     },
     {
       "id": 2,
       "nom": "raine",
-      "image": "/img/raine.png",
-      "ingredient1": ["creme fraiche"]
+      "image": "img/raine.png",
+      "ingredient1": "creme fraiche"
       
     },
     {
       "id": 3,
       "nom": "norvegienne",
-      "image": "/img/norvégienne.png",
-      "ingredient1": ["oignon"]
+      "image": "img/norvégienne.png",
+      "ingredient1": "oignon"
     },
     {
       "id": 4,
       "nom": "marguarita",
-      "image": "/img/marguarita.png",
-      "ingredient1": ["viande hachée"]
+      "image": "img/marguarita.png",
+      "ingredient1": "viande hachée"
     }
   ]
 }
